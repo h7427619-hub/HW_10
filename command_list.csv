@@ -1,0 +1,26 @@
+    1  git config --global user.name "Halyna Stepchuk"
+    2  git config --global user.email "h7427619@gmail.com"
+    3  git clone https://github.com/h7427619-hub/HW_10.git
+    4  cd HW_10
+    5  touch test_ignore.txt
+    6  nano .gitignore
+    7  git status
+    8  git add
+    9  git add .
+   10  git commit -m "File was edited"
+   11  touch main_test.txt
+   12  git add . 
+   13  git commit -m "New file was created"
+   14  git checkout -b develop
+   15  touch develop_test.txt
+   16  git add .
+   17  git commit -m "Empty file was created"
+   18  Add-Content develop_test.txt "just a small change"
+   19  echo "just a small change" >> develop_test.txt
+   20  git status
+   21  git add .
+   22  git commit -m "Small changes were done"
+   23  git checkout main
+   24  git merge develop
+   25  git log
+   26  history > command_list.csv
